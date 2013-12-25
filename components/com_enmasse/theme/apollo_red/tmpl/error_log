@@ -1,0 +1,1 @@
+[18-Apr-2011 16:58:36] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_sqlite.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_sqlite.so: undefined symbol: sqlite3_libversion in Unknown on line 0

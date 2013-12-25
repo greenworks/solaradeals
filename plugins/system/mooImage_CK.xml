@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="plugin" version="1.5.0" group="system">
+    <name>System - MooImage_CK</name>
+    <author>Cédric KEIFLIN</author>
+    <creationDate>2010</creationDate>
+    <copyright>Cédric KEIFLIN</copyright>
+    <license>GNU/GPL 3 http://www.gnu.org/licenses/gpl.html</license>
+    <authorEmail>ced1870@hotmail.com</authorEmail>
+    <authorUrl>http://www.joomlack.fr.nf</authorUrl>
+    <version>1.3</version>
+    <description>PLUG_DESC</description>
+    <files>
+        <filename plugin="mooImage_CK">mooImage_CK.php</filename>
+        <filename plugin="mooImage_CK">mooImage_CK/mooPuffy_CK.js</filename>
+        <filename plugin="mooImage_CK">mooImage_CK/mooOpacite_CK.js</filename>
+        <filename plugin="mooImage_CK">mooImage_CK/mooShake_CK.js</filename>
+        <filename plugin="mooImage_CK">mooImage_CK/curvyCorners_CK.js</filename>
+        <filename plugin="mooImage_CK">mooImage_CK/mooCorners_CK.js</filename>
+        <filename plugin="mooImage_CK">mooImage_CK/mooReflection_CK.js</filename>
+        <filename plugin="mooImage_CK">mooImage_CK/index.html</filename>
+    </files>
+    <params>
+        <param name="@spacer" type="spacer" />
+        <param name="usemoopuffy" type="radio" default="1" label="USE_MOOPUFFY" description="USE_MOOPUFFY_DESC">
+            <option value="1">YES</option>
+            <option value="0">NO</option>
+        </param>
+        <param name="classmoopuffy" type="text" default="moopuffy" label="CLASS_MOOPUFFY" description="CLASS_MOOPUFFY_DESC" />
+        <param name="dureemoopuffy" type="text" default="500" label="DUREE_MOOPUFFY" description="DUREE_MOOPUFFY_DESC" />
+        <param name="ratiomoopuffy" type="text" default="1.3" label="RATIO_MOOPUFFY" description="RATIO_MOOPUFFY_DESC" />
+        
+        <param name="@spacer" type="spacer" />
+        <param name="usemooopacite" type="radio" default="1" label="USE_MOOOPACITE" description="USE_MOOOPACITE_DESC">
+            <option value="1">YES</option>
+            <option value="0">NO</option>
+        </param>
+        <param name="classmooopacite" type="text" default="mooopacite" label="CLASS_MOOOPACITE" description="CLASS_MOOOPACITE_DESC" />
+        <param name="opacitemooopacite" type="text" default="0.5" label="OPACITE_MOOOPACITE" description="OPACITE_MOOOPACITE_DESC" />
+        <param name="dureemooopacite1" type="text" default="100" label="DUREE_MOOOPACITE1" description="DUREE_MOOOPACITE1_DESC" />
+        <param name="dureemooopacite2" type="text" default="500" label="DUREE_MOOOPACITE2" description="DUREE_MOOOPACITE2_DESC" />
+        <param name="@spacer" />
+        <param name="usemooshake" type="radio" default="1" label="USE_MOOSHAKE" description="USE_MOOSHAKE_DESC">
+            <option value="1">YES</option>
+            <option value="0">NO</option>
+        </param>
+        <param name="classmooshake" type="text" default="mooshake" label="CLASS_MOOSHAKE" description="CLASS_MOOSHAKE_DESC" />
+        <param name="dureemooshake" type="text" default="100" label="DUREE_MOOSHAKE" description="DUREE_MOOSHAKE_DESC" />
+        <param name="@spacer" />
+        <param name="usemoocorners" type="radio" default="1" label="USE_MOOCORNERS" description="USE_MOOCORNERS_DESC">
+            <option value="1">YES</option>
+            <option value="0">NO</option>
+        </param>
+        <param name="classmoocorners" type="text" default="moocorners" label="CLASS_MOOCORNERS" description="CLASS_MOOCORNERS_DESC" />
+        <param name="rayonmoocorners" type="text" default="10" label="RAYON_MOOCORNERS" description="RAYON_MOOCORNERS_DESC" />
+        <param name="@spacer" />
+        <param name="usemooreflect" type="radio" default="1" label="USE_MOOREFLECT" description="USE_MOOREFLECT_DESC">
+            <option value="1">YES</option>
+            <option value="0">NO</option>
+        </param>
+    </params>
+    <languages>
+        <language tag="en-GB">en-GB.plg_system_mooImage_CK.ini</language>
+        <language tag="fr-FR">fr-FR.plg_system_mooImage_CK.ini</language>
+    </languages>
+</install>

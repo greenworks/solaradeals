@@ -1,0 +1,1 @@
+DELETE FROM `#__components` WHERE name='En Masse';

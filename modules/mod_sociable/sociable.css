@@ -1,0 +1,29 @@
+
+div ul.sociableList
+{
+    list-style:none;
+    display:block;
+    padding-top:3px;
+    padding-bottom:3px;
+}
+    
+    div ul.sociableList img
+    {
+        border:none;
+    }
+    
+    div ul.sociableList li
+    {
+        padding:1px;
+        display:inline;
+    }
+    
+    div ul.sociableList li a
+    {
+        opacity:0.5;
+    }
+    
+    div ul.sociableList li a:hover
+    {
+        opacity:1;
+    }

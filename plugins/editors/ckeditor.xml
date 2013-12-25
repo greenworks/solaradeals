@@ -1,0 +1,19 @@
+<install version="1.5.5.5" type="plugin" group="editors" method="upgrade">
+	<name>Editor - CKEditor</name>
+	<version>3.5</version>
+	<creationDate>June 2010</creationDate>
+	<author>CKSource</author>
+	<authorurl>http://cksource.com</authorurl>
+	<license>GPL</license>
+	<description>CKEDITOR_PLUGIN_DESCRIPTION</description>
+	<files>
+		<filename plugin="ckeditor">ckeditor.php</filename>
+		<folder>ckeditor</folder>
+	</files>
+	<params>
+		<param type="spacer" default="EDITOR PARAMS DESC"></param>
+	</params>    
+	<languages folder="language">
+		<language tag="en-GB">en-GB.plg_editors_ckeditor.ini</language>
+	</languages>
+</install> 

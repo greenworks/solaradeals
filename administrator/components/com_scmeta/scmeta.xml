@@ -1,0 +1,36 @@
+<install type="component" version="1.5.0">
+    <name>scmeta</name>
+    <version>2.0.0</version> 
+    <creationDate>19th July 2010</creationDate>    
+    <author>Techjoomla</author>
+    <authoremail>extensions@techjoomla.com</authoremail>
+    <authorurl>http://www.techjoomla.com</authorurl>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <copyright>(c) Techjoomla</copyright>    
+    <description>Section Category Metadata</description>
+    <installfile>install.scmeta.php</installfile>
+    <uninstallfile>uninstall.scmeta.php</uninstallfile>
+    <files folder="site">
+        <filename>controller.php</filename>
+        <filename>scmeta.php</filename>    
+    </files>
+    <languages folder="site/language">
+        <language tag="en-GB">en-GB/en-GB.com_scmeta.ini</language>
+    </languages>
+    <administration>
+        <menu>Section/Category Meta</menu>
+        <files folder="admin">            
+            <filename>admin.scmeta.php</filename>            
+            <filename>controller.php</filename>           
+            <filename>install.scmeta.php</filename>
+            <filename>uninstall.scmeta.php</filename>
+            <folder>controllers</folder>            
+            <folder>models</folder>           
+            <folder>tables</folder>                       
+            <folder>views</folder>      
+        </files>
+        <languages folder="admin/language">
+            <language tag="en-GB">en-GB/en-GB.com_scmeta.ini</language>
+        </languages>
+    </administration>
+</install>

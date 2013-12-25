@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+	<name>Udjamaflip's Sociable Module by Andy Sharman</name>
+	<author>Andrew Sharman</author>
+	<creationDate>June 2009</creationDate>
+	<copyright>Copyright (C) 2005 - 2009 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>n/a</authorEmail>
+	<authorUrl>http://www.udjamaflip.com</authorUrl>
+	<version>1.5.0</version>
+	<description>Udjamaflip's Sociable Module</description>
+	<files>
+	    <filename module="mod_sociable">mod_sociable.php</filename>
+        <filename module="mod_sociable">index.html</filename>
+        <filename module="mod_sociable">helper.php</filename>
+        <filename module="mod_sociable">sociable.css</filename>
+
+        <filename module="mod_sociable">greybox/AJS.js</filename>
+        <filename module="mod_sociable">greybox/AJS_fx.js</filename>
+        <filename module="mod_sociable">greybox/g_close.gif</filename>
+        <filename module="mod_sociable">greybox/gb_scripts.js</filename>
+        <filename module="mod_sociable">greybox/gb_styles.css</filename>
+        <filename module="mod_sociable">greybox/header_bg.gif</filename>
+        <filename module="mod_sociable">greybox/indicator.gif</filename>
+        <filename module="mod_sociable">greybox/loader_frame.html</filename>
+        <filename module="mod_sociable">greybox/next.gif</filename>
+        <filename module="mod_sociable">greybox/prev.gif</filename>
+        <filename module="mod_sociable">greybox/w_close.gif</filename>
+
+        <filename module="mod_sociable">icons/16/diggit_16.png</filename>
+        <filename module="mod_sociable">icons/16/facebook_16.png</filename>
+        <filename module="mod_sociable">icons/16/delicious_16.png</filename>
+        <filename module="mod_sociable">icons/16/google_16.png</filename>
+        <filename module="mod_sociable">icons/16/mixx_16.png</filename>
+        <filename module="mod_sociable">icons/16/myspace_16.png</filename>
+        <filename module="mod_sociable">icons/16/newsvine_16.png</filename>
+        <filename module="mod_sociable">icons/16/reddit_16.png</filename>
+        <filename module="mod_sociable">icons/16/stumbleupon_16.png</filename>
+        <filename module="mod_sociable">icons/16/technorati_16.png</filename>
+        <filename module="mod_sociable">icons/16/twitter_16.png</filename>
+        <filename module="mod_sociable">icons/16/udjamaflip_16.png</filename>
+        <filename module="mod_sociable">icons/16/linkedin_16.png</filename>
+        <filename module="mod_sociable">icons/16/aim_16.png</filename>
+        <filename module="mod_sociable">icons/16/bebo_16.png</filename>
+        <filename module="mod_sociable">icons/16/blogger_16.png</filename>
+        <filename module="mod_sociable">icons/16/friendfeed_16.png</filename>
+        <filename module="mod_sociable">icons/16/wordpress_16.png</filename>
+        <filename module="mod_sociable">icons/16/netvibes_16.png</filename>
+        <filename module="mod_sociable">icons/16/tumblr_16.png</filename>
+        <filename module="mod_sociable">icons/16/yahoo_16.png</filename>
+        <filename module="mod_sociable">icons/16/yahoobuzz_16.png</filename>
+
+        <filename module="mod_sociable">icons/32/diggit_32.png</filename>
+        <filename module="mod_sociable">icons/32/facebook_32.png</filename>
+        <filename module="mod_sociable">icons/32/delicious_32.png</filename>
+        <filename module="mod_sociable">icons/32/google_32.png</filename>
+        <filename module="mod_sociable">icons/32/mixx_32.png</filename>
+        <filename module="mod_sociable">icons/32/myspace_32.png</filename>
+        <filename module="mod_sociable">icons/32/newsvine_32.png</filename>
+        <filename module="mod_sociable">icons/32/reddit_32.png</filename>
+        <filename module="mod_sociable">icons/32/stumbleupon_32.png</filename>
+        <filename module="mod_sociable">icons/32/technorati_32.png</filename>
+        <filename module="mod_sociable">icons/32/twitter_32.png</filename>
+        <filename module="mod_sociable">icons/32/udjamaflip_32.png</filename>
+        <filename module="mod_sociable">icons/32/linkedin_32.png</filename>
+        <filename module="mod_sociable">icons/32/aim_32.png</filename>
+        <filename module="mod_sociable">icons/32/bebo_32.png</filename>
+        <filename module="mod_sociable">icons/32/blogger_32.png</filename>
+        <filename module="mod_sociable">icons/32/friendfeed_32.png</filename>
+        <filename module="mod_sociable">icons/32/wordpress_32.png</filename>
+        <filename module="mod_sociable">icons/32/netvibes_32.png</filename>
+        <filename module="mod_sociable">icons/32/tumblr_32.png</filename>
+        <filename module="mod_sociable">icons/32/yahoo_32.png</filename>
+        <filename module="mod_sociable">icons/32/yahoobuzz_32.png</filename>
+        
+    </files>
+	<params>
+        <param name="icon_size" type="list" default="32" label="Select what icon size you wish to use:" description="Sets how big the icons are going to be when they are display, on an icon by icon basis.">
+            <option value="16">16px by 16px</option>
+            <option value="32">32px by 32px</option>
+        </param>
+        <param name="use_css" type="list" default="1" label="Use udjamaflip's sociable CSS?" description="If this is set to yes built-in CSS is applied, otherwise styling can be done yourself.">
+            <option value="0">no</option>
+            <option value="1">yes</option>
+        </param>
+
+        <param name="delicious" type="list" default="1" label="Delicious" description="Select 'yes' to display the Delicious sociable icon.">
+            <option value="0">no</option>
+            <option value="1">yes</option>
+        </param>
+
+        <param name="diggit" type="list" default="1" label="DiggIt" description="Select 'yes' to display the DiggIt sociable icon.">
+            <option value="0">no</option>
+            <option value="1">yes</option>
+        </param>
+
+        <param name="facebook" type="list" default="1" label="Facebook" description="Select 'yes' to display the Facebook sociable icon.">
+            <option value="0">no</option>
+            <option value="1">yes</option>
+        </param>
+
+        <param name="google" type="list" default="1" label="Google Bookmarks" description="Select 'yes' to display the Google Bookmarks sociable icon.">
+            <option value="0">no</option>
+            <option value="1">yes</option>
+        </param>
+
+        <param name="mixx" type="list" default="1" label="Mixx" description="Select 'yes' to display the Mixx sociable icon.">
+            <option value="0">no</option>
+            <option value="1">yes</option>
+        </param>
+
+        <param name="myspace" type="list" default="1" label="MySpace" description="Select 'yes' to display the MySpace sociable icon.">
+            <option value="0">no</option>
+            <option value="1">yes</option>
+        </param>
+
+        <param name="newsvine" type="list" default="1" label="Newsvine" description="Select 'yes' to display the Newsvine sociable icon.">
+            <option value="0">no</option>
+            <option value="1">yes</option>
+        </param>
+
+        <param name="reddit" type="list" default="1" label="reddit" description="Select 'yes' to display the reddit sociable icon.">
+            <option value="0">no</option>
+            <option value="1">yes</option>
+        </param>
+
+        <param name="stumbleupon" type="list" default="1" label="stumbleupon" description="Select 'yes' to display the stumbleupon sociable icon.">
+            <option value="0">no</option>
+            <option value="1">yes</option>
+        </param>
+
+        <param name="technorati" type="list" default="1" label="technorati" description="Select 'yes' to display the technorati sociable icon.">
+            <option value="0">no</option>
+            <option value="1">yes</option>
+        </param>
+
+        <param name="twitter" type="list" default="1" label="twitter" description="Select 'yes' to display the twitter sociable icon.">
+            <option value="0">no</option>
+            <option value="1">yes</option>
+        </param>
+
+        <param name="udjamaflip" type="list" default="1" label="Support Udjamaflip" description="Select 'yes' to display the support udjamaflip icon.">
+            <option value="0">no</option>
+            <option value="1">yes</option>
+        </param>
+
+        <param name="linkedin" type="list" default="1" label="linkedin" description="Select 'yes' to display the linkedin sociable icon.">
+            <option value="0">no</option>
+            <option value="1">yes</option>
+        </param>
+
+        <param name="aim" type="list" default="1" label="aim" description="Select 'yes' to display the aim sociable icon.">
+            <option value="0">no</option>
+            <option value="1">yes</option>
+        </param>
+
+        <param name="bebo" type="list" default="1" label="bebo" description="Select 'yes' to display the bebo sociable icon.">
+            <option value="0">no</option>
+            <option value="1">yes</option>
+        </param>
+
+        <param name="blogger" type="list" default="1" label="blogger" description="Select 'yes' to display the blogger sociable icon.">
+            <option value="0">no</option>
+            <option value="1">yes</option>
+        </param>
+
+        <param name="friendfeed" type="list" default="1" label="friendfeed" description="Select 'yes' to display the friendfeed sociable icon.">
+            <option value="0">no</option>
+            <option value="1">yes</option>
+        </param>
+
+        <param name="wordpress" type="list" default="1" label="wordpress" description="Select 'yes' to display the wordpress sociable icon.">
+            <option value="0">no</option>
+            <option value="1">yes</option>
+        </param>
+
+        <param name="netvibes" type="list" default="1" label="netvibes" description="Select 'yes' to display the netvibes sociable icon.">
+            <option value="0">no</option>
+            <option value="1">yes</option>
+        </param>
+
+        <param name="tumblr" type="list" default="1" label="tumblr" description="Select 'yes' to display the tumblr sociable icon.">
+            <option value="0">no</option>
+            <option value="1">yes</option>
+        </param>
+
+        <param name="yahoo" type="list" default="1" label="Yahoo" description="Select 'yes' to display the Yahoo sociable icon.">
+            <option value="0">no</option>
+            <option value="1">yes</option>
+        </param>
+
+        <param name="yahoobuzz" type="list" default="1" label="yahoobuzz" description="Select 'yes' to display the yahoobuzz sociable icon.">
+            <option value="0">no</option>
+            <option value="1">yes</option>
+        </param>
+        
+    </params>
+    <params  group="advanced">
+        <param name="link_action" type="list" default="2" label="When a user clicks on one of the images in the feed:" description="Dictates what happens when a picture in the feed is clicked on">
+            <option value="0">Use this window</option>
+            <option value="1">Open in greybox</option>
+            <option value="2">Open in new window</option>
+        </param>      
+        <param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="Module class suffix applied to the surrounding div." />
+    </params>
+</install>

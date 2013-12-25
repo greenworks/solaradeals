@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="system">
+   <name>System - Section-Category Meta</name>
+   <version>2.0.0</version> 
+   <creationDate>19th July 2010</creationDate>    
+   <author>Techjoomla</author>
+   <authoremail>extensions@techjoomla.com</authoremail>
+   <authorurl>http://www.techjoomla.com</authorurl>
+   <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+   <copyright>(c) Techjoomla</copyright>    
+   <description>Section Category Metadata</description>
+	<files>
+		<filename plugin="scmeta">scmeta.php</filename>		
+	</files>
+	<params>		
+		<param name="section_append_keywords" type="radio" default="0" label="Append Section Meta Keywords" description="If yes, it appends the section meta keywords . if no it replace the section meta keywords">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="section_append_desc" type="radio" default="0" label="Append Section Meta Description" description="If yes, it appends the section meta description . if no it replace the section meta description">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="category_append_keywords" type="radio" default="0" label="Append Category Meta Keywords" description="If yes, it appends the category meta Keywords . if no it replace the category meta Keywords">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="category_append_desc" type="radio" default="0" label="Append Category Meta Description" description="If yes, it appends the category meta description . if no it replace the category meta description">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>		
+	</params>
+</install>

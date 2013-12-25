@@ -1,0 +1,752 @@
+body {
+	width: 100%;
+	font-style: normal;
+	font-family: arial, verdana, tahoma, inherit;
+	font-size: 12px;
+	margin: 0px
+}
+
+a {
+	cursor: pointer;
+}
+
+.fl {
+	float: left
+}
+
+.fr {
+	float: right
+}
+	/*  ---------------------------------   Side Deal Module   -------------------------------------  */
+#SideDealModule {
+	width: 100%
+}
+
+#SideDealModule .timeupdate {
+	width: 100%;
+	text-align: center;
+	background-color: #be98c4;
+	padding: 2px 0 2px 0
+}
+
+.SideDealModule_information {
+	width: 100%;
+	text-align: center;
+	font-size: 14px;
+	color: #333333;
+	padding: 2px 0 2px 0
+}
+
+.SideDealModule_information img {
+	margin: 0 auto
+}
+
+#SideDealModule a {
+	float: none;
+}
+
+#SideDealModule .bought {
+	width: 100%;
+	background-color: #8f2536;
+	text-align: center;
+	color: #FFFFFF;
+	font-weight: bold;
+	padding: 2px 0 2px 0
+}
+	
+	
+	/*  ---------------------------------   Accessories   ------------------------------------------  */
+.green_button {
+	height: 32px
+}
+
+.green_button .leftbutton {
+	height: 32px;
+	width: 5px;
+	background-image: url(../images/green_button_bg.png);
+	float: left
+}
+
+.green_button .centerbutton {
+	height: 24px;
+	padding: 8px 5px 0 5px;
+	text-align: center;
+	color: #2B4705;
+	font-weight: bold;
+	background-image: url(../images/green_button_bg.png);
+	background-position: -5px 0px;
+	float: left;
+	text-decoration: none;
+}
+
+.green_button .rightbutton {
+	height: 32px;
+	width: 5px;
+	background-image: url(../images/green_button_bg.png);
+	background-position: -245px 0px;
+	float: left
+}
+	
+	/*  ---------------------------------   Summarized Cart Module   -------------------------------  */
+#SummarizedCartModule {
+	width: 100%
+}
+
+.SummarizedCartModule_title {
+	width: 100%;
+	background-color: #8f2536;
+	padding: 5px 0 5px 0;
+	text-align: center;
+	color: #FFFFFF
+}
+
+.SummarizedCartModule_information {
+	width: 100%;
+	padding: 5px 0 5px 0;
+	text-align: center;
+	color: #333333
+}
+
+#SummarizedCartModule  a {
+	text-decoration: none
+}
+
+#SummarizedCartModule .left_cl {
+	float: left;
+	padding: 5px
+}
+
+#SummarizedCartModule .right_cl {
+	float: right;
+	padding: 5px
+}
+	
+
+	/*  ---------------------------------   Deal Listing Component   -------------------------------  */
+.h1 {
+	width: 123px;
+	height: 2px;
+	float: left;
+	overflow: hidden
+}
+
+.h2 {
+	width: 10px;
+	height: 184px;
+	float: left
+}
+
+.h3 {
+	width: 100%;
+	height: 10px;
+	overflow: hidden;
+	float: left
+}
+
+#DealListingComponent {
+	width: 707px;
+	height: 396px
+}
+
+#DealListingComponent a {
+	float: none;
+	color: #8f2536 ;
+	text-decoration: none;
+}
+
+#DealListingComponent a:HOVER {
+	color: navy;
+}
+
+#DealListingComponent .box {
+	width: 330px;
+	height: 210px;
+	border: #8f2536 solid 2px;
+	float: left;
+	vertical-align: middle;
+}
+
+#DealListingComponent .box .apollo_title {
+	width: 328px;
+	padding: 5px;
+	float: left;
+	font-size: 14px;
+	color: #8f2536 ;
+	font-weight: bold;
+	float: left;
+	text-align: center
+}
+
+#DealListingComponent .box .information {
+	width: 318px;
+	padding: 10px;
+	float: left
+}
+
+#DealListingComponent .box .information .avatar {
+	float: right;
+	height: 112px;
+	width: 183px
+}
+
+#DealListingComponent .box .information .value {
+	width: 125px;
+	height: 112px;
+	float: left
+}
+
+#DealListingComponent .box .information .value .top {
+	width: 123px;
+	height: 42px;
+	color: #8f2536 ;
+	font-weight: bold;
+	text-align: center;
+	border: #8f2536 solid 1px;
+	background-color: #be98c4;
+	float: left
+}
+
+#DealListingComponent .box .information .value .top span {
+	font-size: 22px;
+	line-height: 22px;
+}
+
+#DealListingComponent .box .information .value .bottom {
+	width: 113px;
+	padding-left: 10px;
+	height: 65px;
+	border: #8f2536 solid 1px;
+	background-color: #be98c4;
+	float: left
+}
+
+#DealListingComponent .box .information .value .bottom .apollo_info {
+	width: 100%;
+	padding: 2px 0 2px 0;
+	color:#000;
+}
+	
+	/*  ---------------------------------   Shopping Cart   ----------------------------------------  */
+.h4 {
+	width: 5px;
+	height: 32px;
+	float: left
+}
+
+#ShoppingCart {
+	width: 635px;
+	height: 137px;
+	border: #8f2536 solid 2px;
+	float: left
+}
+
+#ShoppingCart .top {
+	width: 100%;
+	height: 80px;
+	float: left
+}
+
+#ShoppingCart .bottom {
+	width: 100%;
+	height: 47px;
+	padding-top: 10px;
+	background-color: #8f2536;
+	float: left
+}
+
+#ShoppingCart .bottom .text {
+	color: #FFFFFF;
+	padding: 5px;
+	font-weight: bold;
+	line-height: 6px;
+}
+
+#ShoppingCart .top .dealname {
+	width: 50%;
+	padding-left: 2%;
+	height: 80px;
+	float: left;
+}
+
+#ShoppingCart .top .price {
+	width: 12%;
+	height: 80px;
+	float: left
+}
+
+#ShoppingCart .top .qty {
+	width: 12%;
+	height: 80px;
+	float: left
+}
+
+#ShoppingCart .top .qty input {
+	width: 98%;
+	height: 14px;
+	color: #333333;
+	padding: 2%;
+	margin-left: 2px;
+	overflow: hidden;
+	border: #999999 solid 1px;
+	float: left
+}
+
+#ShoppingCart .top .total {
+	width: 12%;
+	height: 80px;
+	float: left
+}
+
+#ShoppingCart .top .updateqtiny {
+	width: 10%;
+	height: 80px;
+	float: left
+}
+
+#ShoppingCart .top .apollo_title {
+	width: 100%;
+	padding-top: 10px;
+	color: #666666;
+	text-align: center;
+	font-weight: bold
+}
+
+#ShoppingCart .top .apollo_info {
+	width: 100%;
+	padding-top: 5px;
+	color: #333333;
+	text-align: center
+}
+
+.buttonshoppingcart {
+	width: 662px;
+	height: 32px;
+	padding: 20px;
+	float: left
+}
+	
+	/*-------------------------------- order List -----------------------------------*/
+#OrderList {
+	width: 635px;
+	border: #8f2536 solid 2px;
+	float: left
+}
+
+#OrderList .top {
+	width: 100%;
+	float: left
+}
+
+#OrderList .bottom {
+	width: 100%;
+	height: 27px;
+	padding-top: 10px;
+	background-color: #8f2536;
+	float: left
+}
+	
+	/*  ---------------------------------   Order_Information   ------------------------------------- */
+#Order_Information {
+	width: 635px;
+	height: 176px;
+	border: #8f2536 solid 2px;
+	float: left
+}
+
+#Order_Information a {
+	text-decoration: none;
+}
+
+#Order_Information .top {
+	width: 100%;
+	height: 125px;
+	float: left
+}
+
+#Order_Information .bottom {
+	width: 100%;
+	height: 43px;
+	padding-top: 10px;
+	background-color: #8f2536;
+	float: left
+}
+
+#Order_Information .top .line {
+	width: 100%;
+	padding: 8px;
+	float: left
+}
+
+#Order_Information .top span {
+	width: 100%;
+	font-size: 16px;
+	font-weight: bold;
+	color: #666666;
+	line-height: 12px;
+	padding: 10px;
+	float: left
+}
+	
+	/*  ---------------------------------   Component Homepage   --------------------------------- */
+#ComponentHomepage {
+	width: 100%;
+	float: left
+}
+
+#ComponentHomepage .apollo_title {
+	width: 100%;
+	padding: 20px;
+	font-size: 22px;
+	font-weight: bold;
+	line-height: 28px;
+}
+
+#ComponentHomepage .apollo_title span {
+	color: #339999
+}
+
+#ComponentHomepage .content {
+	width: 100%;
+	float: left
+}
+
+#ComponentHomepage .content .leftcontent {
+	width: 252px;
+	float: left
+}
+
+#ComponentHomepage .content .leftcontent .buybox {
+	width: 252px;
+	height: 75px;
+	padding-top: 16px;
+	background-image: url(../images/buybox.png);
+	float: left
+}
+
+#ComponentHomepage .content .leftcontent .buybox .middle {
+	width: 252px;
+	height: 50px
+}
+
+#ComponentHomepage .content .leftcontent .buybox .middle .payment {
+	width: 80px;
+	height: 46px;
+	padding-top: 18px;
+	text-align: center;
+	font-size: 28px;
+	color: #FFFFFF;
+	font-weight: bold;
+	float: left
+}
+
+#ComponentHomepage .content .leftcontent .buybox .middle .buybutton {
+	width: 105px;
+	height: 50px;
+	float: left
+}
+
+#ComponentHomepage .content .leftcontent .column {
+	width: 218px;
+	float: left
+}
+
+#ComponentHomepage .content .leftcontent .column .h5 {
+	width: 218px;
+	height: 5px;
+	overflow: hidden;
+	float: left
+}
+
+#ComponentHomepage .content .leftcontent .column .h6 {
+	width: 218px;
+	height: 10px;
+	float: left
+}
+
+#ComponentHomepage .content .leftcontent .column .valuebox {
+	width: 218px;
+	height: 40px;
+	background-image: url(../images/valuebox.png);
+	float: left
+}
+
+#ComponentHomepage .content .leftcontent .column .valuebox .textbox {
+	width: 33%;
+	color: #FFFFFF;
+	text-align: center;
+	float: left
+}
+
+#ComponentHomepage .content .leftcontent .column .valuebox .textbox span
+	{
+	font-size: 16px;
+	font-weight: bold;
+	width: 100%;
+	float: left
+}
+
+#ComponentHomepage .content .leftcontent .column .giftbox {
+	width: 218px;
+	float: left
+}
+
+#ComponentHomepage .content .leftcontent .column .timebox {
+	width: 188px;
+	padding: 15px;
+	height: 80px;
+	background-image: url(../images/timebox.png);
+	float: left
+}
+
+#ComponentHomepage .content .leftcontent .column .timebox .text {
+	width: 100%;
+	float: left;
+	color: #000;
+}
+
+#ComponentHomepage .content .leftcontent .column .timebox img {
+	width: 64px;
+	height: 64px;
+	position: relative;
+	top: -80px;
+	left: 110px
+}
+
+#ComponentHomepage .content .leftcontent .column .rankbox {
+	width: 218px;
+	height: 116px;
+	float: left;
+	background-image: url(../images/rankbox.gif)
+}
+
+#ComponentHomepage .content .leftcontent .column .rankbox .apollo_title {
+	width: 100%;
+	padding: 10px 0 0 0;
+	font-size: 16px;
+	font-weight: bold;
+	color: #000;
+	text-align: center;
+	float: left
+}
+
+#ComponentHomepage .content .leftcontent .column .rankbox .text {
+	width: 100%;
+	padding-top: 5px;
+	color: #5b2d3c;
+	text-align: center;
+	float: left
+}
+
+#ComponentHomepage .content .leftcontent .column .rankbox .point {
+	width: 186px;
+	height: 27px;
+	padding: 0 16px;
+	float: left
+}
+
+#ComponentHomepage .content .leftcontent .column .rankbox .point .leftpoint
+	{
+	width: 5px;
+	height: 27px;
+	background-image: url(../images/leftpoint_bg.gif);
+	float: left
+}
+
+#ComponentHomepage .content .leftcontent .column .rankbox .point .centerpoint
+	{
+	width: 176px;
+	height: 27px;
+	background-image: url(../images/centerpoint_bg.gif);
+	float: left
+}
+
+#ComponentHomepage .content .leftcontent .column .rankbox .point .rightpoint
+	{
+	width: 5px;
+	height: 27px;
+	background-image: url(../images/rightpoint_bg.gif);
+	float: left
+}
+
+#ComponentHomepage .content .leftcontent .column .rankbox .point .centerpoint .leftvote
+	{
+	width: 3px;
+	height: 27px;
+	background-image: url(../images/leftvote.gif);
+	float: left
+}  /*----- important -----*/
+#ComponentHomepage .content .leftcontent .column .rankbox .point .centerpoint .centervote
+	{
+	width: 20px;
+	height: 27px;
+	background-image: url(../images/centervote.gif);
+	float: left
+}  /*----------*/
+#ComponentHomepage .content .leftcontent .column .rankbox .point .centerpoint .rightvote
+	{
+	width: 14px;
+	height: 27px;
+	background-image: url(../images/rightvote.gif);
+	float: left
+}
+
+#ComponentHomepage .content .leftcontent .column .rankbox .point .leftnumber
+	{
+	color: #5b2d3c;
+	font-size: 20px;
+	font-weight: bold;
+	float: left
+}
+
+#ComponentHomepage .content .leftcontent .column .rankbox .point .rightnumber
+	{
+	color: #5b2d3c;
+	font-size: 20px;
+	font-weight: bold;
+	float: right
+}
+
+#ComponentHomepage .content .rightcontent {
+	width: 380px;
+	float: left
+}
+
+#ComponentHomepage .content .rightcontent .h7 {
+	width: 100%;
+	height: 10px;
+	float: left
+}
+
+#ComponentHomepage .content .rightcontent img {
+	width: 100% px;
+	float: left
+}
+
+#ComponentHomepage .content .rightcontent .pages {
+	width: 100%;
+	float: left
+}
+
+#ComponentHomepage .content .rightcontent .pages .h8 {
+	width: 3px;
+	height: 20px;
+	float: right
+}
+
+#ComponentHomepage .content .rightcontent .pages .number {
+	color: #FF6600;
+	padding: 2px 5px;
+	border: #FF6600 solid 1px;
+	float: right
+}
+
+#ComponentHomepage .content .rightcontent .pages .number:hover {
+	color: #FFFFFF;
+	padding: 2px 5px;
+	border: #FF6600 solid 1px;
+	background-color: #FF6600;
+	float: right
+}
+
+#ComponentHomepage .content .rightcontent .archives {
+	width: 100% px;
+	padding-top: 20px;
+	padding-left: 60px;
+	float: left;
+	text-align: justify;
+	font-size: 14px;
+	background-image: url(../images/icon_archive.png);
+	background-repeat: no-repeat;
+}  /* -------- Descripstion ----------- */
+.h9 {
+	padding-bottom: 30px
+}
+
+.h10 {
+	line-height: 50px
+}
+
+.h11 {
+	background-image: url(../images/dts.gif);
+	background-repeat: no-repeat;
+	background-position: left : -30px;
+}
+
+.h12 {
+	background-image: url(../images/dtc.gif);
+	background-repeat: no-repeat;
+	background-position: left : -30px;
+}
+
+.h13 {
+	width: 100%;
+	height: 20px;
+	float: left
+}
+
+#ComponentHomepage .descrip {
+	width: 100%;
+	float: left;
+	background-color: #EFF8FF;
+	border: solid 1px #355780;
+}
+
+#ComponentHomepage .descrip .leftdescrip {
+	width: 56%;
+	background-color: #FFFFFF;
+	padding: 2%;
+	padding-bottom: 10px;
+	float: left
+}
+
+#ComponentHomepage .descrip .leftdescrip .titled {
+	width: 100%;
+	color: #333333;
+	font-size: 18px;
+	font-weight: bold;
+	float: left;
+	overflow: hidden;
+}
+
+#ComponentHomepage .descrip .leftdescrip .information {
+	width: 100%;
+	font-size: 14px;
+	color: #333333;
+	float: left;
+	line-height: 25px;
+	margin-top: 25px;
+}
+
+#ComponentHomepage .descrip .rightdescript {
+	width: 38%;
+	padding-left: 2%;
+	float: left;
+	margin-top: 25px;
+	line-height: 25px;
+}
+
+#ComponentHomepage .descrip .rightdescript .titled {
+	width: 100%;
+	color: #333333;
+	font-size: 18px;
+	font-weight: bold;
+	float: left;
+	overflow: hidden
+}
+
+#ComponentHomepage .descrip .rightdescript .information {
+	width: 100%;
+	font-size: 14px;
+	color: #333333;
+	float: left
+}
+
+/*-------------------- cash payment instruction ---------------------*/
+#instruction_table {width: 500px;}
+#instruction_table_header {font-size:22px; color:#8F2536; height: 23px}
+
+
+/*-----------------------choose location--------------------------*/
+#choose_location_title {font-size:22px; color:#fff; height: 50px}
+#location_choose_list {height: 50px;}
+#location_choose_list select {width:230px;font-size:16px;}

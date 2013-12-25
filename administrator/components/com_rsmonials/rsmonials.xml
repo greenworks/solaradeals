@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5.3">
+	<name>RSMonials</name>
+  <creationDate>August 2010</creationDate>
+  <author>RS Web Solutions</author>
+  <copyright>Copyright (c) 2003-2008 RS Web Solutions - Development Team</copyright>
+  <license>GNU/GPL http://www.gnu.org/copyleft/gpl.html</license>
+  <authorEmail>souvik@rswebsols.com</authorEmail>
+  <authorUrl>http://www.rswebsols.com</authorUrl>
+  <version>1.5.3</version>
+  <description>RS-Monials is a Testimonial Component developed for Joomla! Version 1.5.x. Using this component you can able to easily accept, manage and display testimonials from your clients or buyers.</description>
+  <params>
+  </params>
+  <files>
+  	<filename>rsmonials.php</filename>
+	<filename>includes/rsfunctions.php</filename>
+	<filename>includes/rssettings.php</filename>
+	<filename>includes/rscaptcha.php</filename>
+	<filename>includes/recaptchalib.php</filename>
+	<filename>css/style.css</filename>
+	<filename>css/default_style.css</filename>
+	<filename>images/captcha.png</filename>
+	<filename>images/default_user_0.png</filename>
+	<filename>images/default_user_1.png</filename>
+	<filename>images/default_user_2.png</filename>
+	<filename>images/quote-left.png</filename>
+	<filename>images/quote-right.png</filename>
+	<filename>images/quote_left.png</filename>
+	<filename>images/quote_right.png</filename>
+	<filename>images/lrs.gif</filename>
+	<filename>images/rrs.gif</filename>
+  </files>
+  
+  <languages>
+  	<language tag="en-GB">en-GB.com_rsmonials.ini</language>
+  </languages>
+
+  <install>
+    <queries>
+		<query>CREATE TABLE IF NOT EXISTS `#__rsmonials` ( `id` int(11) NOT NULL AUTO_INCREMENT, `fname` varchar(50) NOT NULL, `lname` varchar(50) NOT NULL, `about` text NOT NULL, `location` varchar(255) NOT NULL, `website` varchar(255) NOT NULL, `email` varchar(100) NOT NULL, `comment` text NOT NULL, `date` date NOT NULL, `status` int(1) NOT NULL, PRIMARY KEY (`id`) ) ENGINE=MyISAM</query>
+		  
+		<query>DROP TABLE IF EXISTS `#__rsmonials_param`</query>
+		  
+		<query>CREATE TABLE IF NOT EXISTS `#__rsmonials_param` ( `id` int(11) NOT NULL AUTO_INCREMENT, `param_name` varchar(100) NOT NULL, `param_description` text NOT NULL, `param_value` text NOT NULL, `ordering` int(3) NOT NULL DEFAULT '100', PRIMARY KEY (`id`) ) ENGINE=MyISAM</query>
+		  
+		<query>INSERT INTO `#__rsmonials_param` (`id`, `param_name`, `param_description`, `param_value`, `ordering`) VALUES('', 'admin_name', 'Name of Administrator', 'Site Administrator', 1)</query>
+		
+		<query>INSERT INTO `#__rsmonials_param` (`id`, `param_name`, `param_description`, `param_value`, `ordering`) VALUES('', 'admin_email', 'Email Address of Administrator - This will use for sending and receiving Email', 'admin@yoursite.com', 2)</query>
+		
+		<query>INSERT INTO `#__rsmonials_param` (`id`, `param_name`, `param_description`, `param_value`, `ordering`) VALUES('', 'login_to_submit_testimonial', 'Here you can specify who can post testimonials/comments. If you wish anyone can post testimonials then set the value of this field to "false". But if you wish only registered/logged in users can post comment then set the value to "true" here.', 'false', 3)</query>
+		
+		<query>INSERT INTO `#__rsmonials_param` (`id`, `param_name`, `param_description`, `param_value`, `ordering`) VALUES('', 'show_form', 'Set "false" to hide the testimonial submission form in front end. Set "true" to display', 'true', 4)</query>
+		
+		<query>INSERT INTO `#__rsmonials_param` (`id`, `param_name`, `param_description`, `param_value`, `ordering`) VALUES('', 'show_single_name_field', 'Set "false" to display two name fields (i.e. ''First Name'' and ''Last Name''). Set "true" to display single name field (i.e. ''Your Name'')', 'true', 5)</query>
+		
+		<query>INSERT INTO `#__rsmonials_param` (`id`, `param_name`, `param_description`, `param_value`, `ordering`) VALUES('', 'show_about', 'Set "false" to hide "About You" field in front end. Set "true" to display', 'true', 6)</query>
+		
+		<query>INSERT INTO `#__rsmonials_param` (`id`, `param_name`, `param_description`, `param_value`, `ordering`) VALUES('', 'show_location', 'Set "false" to hide "Your Location" field in front end. Set "true" to display', 'true', 7)</query>
+		
+		<query>INSERT INTO `#__rsmonials_param` (`id`, `param_name`, `param_description`, `param_value`, `ordering`) VALUES('', 'show_website', 'Set "false" to hide "Your Website" field in front end. Set "true" to display', 'true', 8)</query>
+		
+		<query>INSERT INTO `#__rsmonials_param` (`id`, `param_name`, `param_description`, `param_value`, `ordering`) VALUES('', 'show_image', 'Set "true" to enable image/picture uploading. Set "false" to disable.', 'true', 9)</query>
+		
+		<query>INSERT INTO `#__rsmonials_param` (`id`, `param_name`, `param_description`, `param_value`, `ordering`) VALUES('', 'image_max_width', 'If you enabled "show_image", then please set the maximum allowed width of image (in pixel).', '500', 10)</query>
+		
+		<query>INSERT INTO `#__rsmonials_param` (`id`, `param_name`, `param_description`, `param_value`, `ordering`) VALUES('', 'image_max_height', 'If you enabled "show_image", then please set the maximum allowed height of image (in pixel).', '500', 11)</query>
+		
+		<query>INSERT INTO `#__rsmonials_param` (`id`, `param_name`, `param_description`, `param_value`, `ordering`) VALUES('', 'image_max_size', 'If you enabled "show_image", then please set the maximum allowed size of image to optimize server load(in kb).', '250', 12)</query>
+		
+		<query>INSERT INTO `#__rsmonials_param` (`id`, `param_name`, `param_description`, `param_value`, `ordering`) VALUES('', 'show_captcha', 'Set "false" to hide "Captcha" field in front end. Set "true" to display', 'true', 13)</query>
+		
+		<query>INSERT INTO `#__rsmonials_param` (`id`, `param_name`, `param_description`, `param_value`, `ordering`) VALUES('', 'use_recaptcha', 'Set "true" if you wish to use "ReCaptcha Library". To enable "ReCaptcha" you need to obtain ReCaptcha "Public API Key" and "Private API Key" from <a href="http://www.google.com/recaptcha" target="_blank">http://www.google.com/recaptcha</a>\r\n\r\nSet "false" to use the component default captcha image.\r\n\r\nWe recommend you to enable ReCaptcha.', 'false', 14)</query>
+		
+		<query>INSERT INTO `#__rsmonials_param` (`id`, `param_name`, `param_description`, `param_value`, `ordering`) VALUES('', 'recaptcha_public_key', 'If you are using "ReCaptcha" then please enter "ReCaptcha Public API Key" here.', '', 15)</query>
+		
+		<query>INSERT INTO `#__rsmonials_param` (`id`, `param_name`, `param_description`, `param_value`, `ordering`) VALUES('', 'recaptcha_private_key', 'If you are using "ReCaptcha" then please enter "ReCaptcha Private API Key" here.', '', 16)</query>
+		
+		<query>INSERT INTO `#__rsmonials_param` (`id`, `param_name`, `param_description`, `param_value`, `ordering`) VALUES('', 'recaptcha_theme', 'Four themes are currently available for ReCaptcha (Red, BlackGlass, White, Clean).\r\n\r\nEnter "1" to enable "Red Theme". Enter "2" to enable "BlackGlass Theme". Enter "3" to enable "White Theme". Enter "4" to enable "Clean Theme".', '1', 17)</query>
+		
+		<query>INSERT INTO `#__rsmonials_param` (`id`, `param_name`, `param_description`, `param_value`, `ordering`) VALUES('', 'auto_approval', 'Set "false" if you wish to review all new testimonial first and then approve manually. Set "true" if you wish new testimonials will approve and start to dispaly instantly after submission', 'false', 18)</query>
+		
+		<query>INSERT INTO `#__rsmonials_param` (`id`, `param_name`, `param_description`, `param_value`, `ordering`) VALUES('', 'show_pagination', 'Set "true" to show pagination in front end. Set "false" to show all testimonials in a single page', 'true', 19)</query>
+		
+		<query>INSERT INTO `#__rsmonials_param` (`id`, `param_name`, `param_description`, `param_value`, `ordering`) VALUES('', 'pagination', 'Set how many testimonials you wish to display in a page. This will only work if you set (show_pagination = true)', '10', 20)</query>
+		
+		<query>INSERT INTO `#__rsmonials_param` (`id`, `param_name`, `param_description`, `param_value`, `ordering`) VALUES('', 'pagination_alignment', 'Set the text alignment of the pagination => left, right or center', 'center', 21)</query>
+		
+		<query>INSERT INTO `#__rsmonials_param` (`id`, `param_name`, `param_description`, `param_value`, `ordering`) VALUES('', 'admin_email_alert', 'Set "true" if you wish to receive one autogenerated email for each and every new testimonial posting. Set "false" to not receive autogenerated email', 'false', 22)</query>
+		
+		<query>DROP TABLE IF EXISTS `#__rsmonials_param_style`</query>
+		  
+		<query>CREATE TABLE IF NOT EXISTS `#__rsmonials_param_style` ( `id` int(11) NOT NULL AUTO_INCREMENT, `param_name` varchar(100) NOT NULL, `param_description` text NOT NULL, `param_value` text NOT NULL, `ordering` int(3) NOT NULL DEFAULT '100', PRIMARY KEY (`id`) ) ENGINE=MyISAM</query>
+		  
+		<query>INSERT INTO `#__rsmonials_param_style` (`id`, `param_name`, `param_description`, `param_value`, `ordering`) VALUES('', 'testimonial_block_border', 'Border Style of each Testimonial block:\r\n\r\nExample 1: 1px solid #cccccc\r\nExample 2: 2px dotted #0000ff\r\nExample 3: 1px dashed #006600', '1px solid #dedede', 1)</query>
+		
+		<query>INSERT INTO `#__rsmonials_param_style` (`id`, `param_name`, `param_description`, `param_value`, `ordering`) VALUES('', 'testimonial_block_background_color', 'Background Color of Testimonial Block:\r\n\r\nExample: #CCCCCC', '#FFFFFF', 2)</query>
+		
+		<query>INSERT INTO `#__rsmonials_param_style` (`id`, `param_name`, `param_description`, `param_value`, `ordering`) VALUES('', 'testimonial_block_rounded_corner', 'Set "true" to get rounded corner of each testimonial block. Set "false" to get square block.\r\n\r\nNote: Rounded corner will not work in IE (upto IE 8). IE not supports it. From IE 9 it will work. IE9 is till to launch.', 'false', 3)</query>
+		
+		<query>INSERT INTO `#__rsmonials_param_style` (`id`, `param_name`, `param_description`, `param_value`, `ordering`) VALUES('', 'testimonial_block_rounded_corner_radius', 'If you enabled "Rounded Corner", then you can set the Radius of the rounded corner (in pixel). By default it is 10. ', '10', 4)</query>
+		
+		<query>INSERT INTO `#__rsmonials_param_style` (`id`, `param_name`, `param_description`, `param_value`, `ordering`) VALUES('', 'testimonial_block_enable_gradient', 'If you wish to use Gradient set this to "true", otherwise "False".\r\n\r\nNote: Gradient will not work in IE (upto IE 8). IE not supports it. From IE 9 it will work. IE9 is till to launch.', 'false', 5)</query>
+		
+		<query>INSERT INTO `#__rsmonials_param_style` (`id`, `param_name`, `param_description`, `param_value`, `ordering`) VALUES('', 'testimonial_block_gradient_start_color', 'If you enabled "Gradient" then please set the start color of the gradient here.\r\n\r\nExample: #F7F7F7', '#F7F7F7', 6)</query>
+		
+		<query>INSERT INTO `#__rsmonials_param_style` (`id`, `param_name`, `param_description`, `param_value`, `ordering`) VALUES('', 'testimonial_block_gradient_end_color', 'If you enabled "Gradient" then please set the start color of the gradient here.\r\n\r\nExample: #FFFFFF', '#FFFFFF', 7)</query>
+		
+		<query>INSERT INTO `#__rsmonials_param_style` (`id`, `param_name`, `param_description`, `param_value`, `ordering`) VALUES('', 'testimonial_block_quotation_image_style', 'Enter "0" to "disable quotation image".\r\nEnter "1" to use "square type quotation image".\r\nEnter "2" to use "round type quotation image".', '2', 8)</query>
+		
+		<query>INSERT INTO `#__rsmonials_param_style` (`id`, `param_name`, `param_description`, `param_value`, `ordering`) VALUES('', 'testimonial_block_default_image', 'If you enabled the image upload option in your testimonial form, then here you can set the default image.\r\n\r\nEnter "0" to "not display any image if someone do not upload his/her image".\r\nEnter "1" to use "Gray User image if there is no image".\r\nEnter "2" to use "Black User (Male) image if there is no image".\r\nEnter "3" to use "Black User (Female) image if there is no image".', '1', 9)</query>
+		
+		<query>INSERT INTO `#__rsmonials_param_style` (`id`, `param_name`, `param_description`, `param_value`, `ordering`) VALUES('', 'testimonial_block_image_position', 'If you enabled the image upload option in your testimonial form, then here you can set the default image position.\r\n\r\nEnter "1" to "Display image in left side of testimonial".\r\nEnter "2" to "Display image in right side of testimonial".\r\nEnter "3" to "Display image in alternate side of testimonial (one in left, next one in right and so on...)".', '1', 10)</query>
+		
+		<query>INSERT INTO `#__rsmonials_param_style` (`id`, `param_name`, `param_description`, `param_value`, `ordering`) VALUES('', 'testimonial_block_image_display_width', 'Display width of the testimonial image (in pixel).', '125', 11)</query>
+		
+		<query>INSERT INTO `#__rsmonials_param_style` (`id`, `param_name`, `param_description`, `param_value`, `ordering`) VALUES('', 'testimonial_block_show_date', 'Enter "true" to display the date of submission of the testimonial.\r\nEnter "false" to not display the date of submission of the testimonial.', 'true', 12)</query>  
+	</queries>
+  </install>
+
+  <uninstall>
+    <queries>
+    </queries>
+  </uninstall>
+
+  <installfile>install.rsmonials.php</installfile>
+  <uninstallfile>uninstall.rsmonials.php</uninstallfile>
+
+  <administration>
+    <menu img="components/com_rsmonials/images/rs.png" link="option=com_rsmonials">RSMonials</menu>
+    <submenu />
+    <files>
+      <filename>admin.rsmonials.php</filename>
+	  <filename>admin.rssettings.php</filename>
+	  <filename>admin.rstestimonials.php</filename>
+	  <filename>admin.rsstyle.php</filename>
+	  <filename>admin.rslanguage.php</filename>
+	  <filename>admin.rsstylesettings.php</filename>
+	  <filename>includes/admin.rsfunctions.php</filename>
+	  <filename>includes/admin.rssettings.php</filename>
+	  <filename>includes/admin.rscompany.php</filename>
+	  <filename>includes/admin.rscompany_h.php</filename>
+	  <filename>includes/admin.rsfooter.php</filename>
+	  <filename>includes/admin.rsheader.php</filename>
+      <filename>images/rs.png</filename>
+	  <filename>images/rsmonials.png</filename>
+	  <filename>images/conf.png</filename>
+	  <filename>images/doc.gif</filename>
+	  <filename>images/testi.gif</filename>
+	  <filename>images/css.png</filename>
+	  <filename>images/language.png</filename>
+	  <filename>images/style.png</filename>
+    </files>
+  </administration>
+</install>

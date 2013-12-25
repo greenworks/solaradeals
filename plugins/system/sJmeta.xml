@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="system">
+	<name>System - Menu Meta</name>
+	<author>I$L@M</author>
+	<creationDate>26 aug 2009</creationDate>
+	<copyright>gnu</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>islam.kasem@yahoo.com</authorEmail>
+	<authorUrl>www.islamonline.net</authorUrl>
+	<version>1.5</version>
+	<description>Menu Meta</description>
+	<files>
+		<filename plugin="sJmeta">sJmeta.php</filename>
+	</files>
+	<params>		
+		<param name="menu_append_keywords" type="radio" default="0" label="Append menu Meta Keywords" description="If yes, it appends the menu meta Keywords . if no it replace the menu meta Keywords">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="menu_append_desc" type="radio" default="0" label="Append menu Meta Description" description="If yes, it appends the menu meta description . if no it replace the menu meta description">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>		
+	</params>
+</install>
+
+
+

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0" client="administrator">
+	<name>Missing Metadata Items</name>
+	<author>Dan Rahmel</author>
+	<creationDate>July 2007</creationDate>
+	<copyright>(C) 2007 Dan Rahmel. All rights reserved.</copyright>
+	<authorEmail>admin@joomlajumpstart.org</authorEmail>
+	<authorUrl>www.joomlajumpstart.org</authorUrl>
+	<version>1.0.0</version>
+	<description>This module displays a list of all articles that have either missing metadescription or metakeywords fields.
+	
+	Don't forget to publish the module and set the Position to "cpanel" with the Administrator Modules option under  the Modules menu.
+	
+	Want to learn how to write a module? Step-by-step instructions for this and other extensions appear in:
+	"Beginning Joomla!" by Dan Rahmel available at Amazon.com or your local bookstore.
+	</description>
+	<files>
+		<filename module="mod_missingmeta">mod_missingmeta.php</filename>
+	</files>
+</install>
+
