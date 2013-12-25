@@ -46,7 +46,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover
   text-decoration: none;
 }
 
-.tele,.search{float:left; height:50px; padding-top:25px}
+.tele,.search{float:left; height:50px; padding-top:25px; color:#fff; font-size:;}
 
 .tele{width:210px; padding-left:15px; margin-right:190px}
 }
