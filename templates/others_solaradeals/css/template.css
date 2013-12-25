@@ -1,6 +1,41 @@
 /* begin Page */
 /* Created by Artisteer v3.0.0.39952 */
 
+/* Fonts styles*/
+
+@font-face {
+    font-family: 'champagne__limousinesregular';
+    src: url('champagne__limousines-webfont.eot');
+    src: url('champagne__limousines-webfont.eot?#iefix') format('embedded-opentype'),
+         url('champagne__limousines-webfont.woff') format('woff'),
+         url('champagne__limousines-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'arial_blackregular';
+    src: url('arial_black-webfont.eot');
+    src: url('arial_black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('arial_black-webfont.woff') format('woff'),
+         url('arial_black-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'motor_oil_1937_m54regular';
+    src: url('motor_oil_1937_m54-webfont.eot');
+    src: url('motor_oil_1937_m54-webfont.eot?#iefix') format('embedded-opentype'),
+         url('motor_oil_1937_m54-webfont.woff') format('woff'),
+         url('motor_oil_1937_m54-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 #art-main, table
 {
     font-family: Arial, Helvetica, Sans-Serif;
@@ -8,6 +43,7 @@
     font-weight: normal;
     font-size: 13px;
 }
+
 
 h1, h2, h3, h4, h5, h6, p, a, ul, ol, li
 {
