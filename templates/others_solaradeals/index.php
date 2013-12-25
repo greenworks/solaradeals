@@ -39,11 +39,11 @@ $view->componentWrapper();
 <body class="<?php echo $view->bodyClass(); ?>">
 <div id="art-main">
 <div class="art-header">
-    <div class="art-header-clip">
+   <!-- <div class="art-header-clip">
     <div class="art-header-center">
         <div class="art-header-jpeg"></div>
     </div>
-    </div>
+    </div>-->
 <div class="art-header-wrapper">
 <div class="art-header-inner">
 <div class="tele"><p>Toronto: 416.929.4247</p><p>Mississauga: 905.896.1074</p></div>
@@ -61,6 +61,13 @@ LogIn | Register
 </div>
 <div class="cleared reset-box"></div>
 <?php if ($view->containsModules('user3', 'extra1', 'extra2')) : ?>
+
+</div>
+</div>
+</div>
+</div>
+<div class="cleared reset-box"></div>
+
 <div class="art-nav">
 	<div class="art-nav-l"></div>
 	<div class="art-nav-r"></div>
@@ -72,11 +79,6 @@ LogIn | Register
 	<?php endif; ?>
 	
 	<?php echo $view->position('user3'); ?>
-</div>
-</div>
-</div>
-</div>
-<div class="cleared reset-box"></div>
 <?php endif; ?>
 <div class="art-sheet">
     <div class="art-sheet-body">
