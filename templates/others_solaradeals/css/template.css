@@ -317,13 +317,14 @@ table.position
 div.art-header
 {
     margin: 0 auto;
-  position: relative;
-  z-index: -1;
+  position: absolute;
+  z-index: 2;
   width:100%;
   height: 90px;
   margin-top: 0;
   margin-bottom: 0;
 background:#6E8702;
+box-shadow: 0 5px 5px #999999;
 }
 
 div.art-header-clip
