@@ -1,8 +1,8 @@
 <?php
 
 /** 
- * Template for Joomla! CMS, created with Artisteer.
- * See readme.txt for more details on how to use the template.
+ * Template for Joomla! CMS,  created with Artisteer.
+ * See readme.txt for more details on how to use the template. 
  */
 
 defined('_JEXEC') or die; 
